@@ -1,42 +1,94 @@
-#Relatório de Vendas SQL + Python + Power BI 📈
+📊 Relatório de Vendas Automatizado: SQL + Python + Power BI
+https://github.com/user-attachments/assets/d8428d2c-b5d6-4855-8006-31290548d628
+Dashboard interativo de análise de vendas
 
-Este é um projeto para automatizar a geração de relatórios de vendas utilizando Python, SQL Server, Power BI e Excel. O objetivo é processar os dados de vendas, armazená-los em um banco de dados e criar relatórios dinâmicos que ajudam na tomada de decisões.
+🚀 Visão Geral do Projeto
+Este projeto automatiza todo o fluxo de análise de vendas, desde o processamento dos dados brutos até a geração de relatórios dinâmicos:
 
-<img width="872" height="480" alt="image" src="https://github.com/user-attachments/assets/d8428d2c-b5d6-4855-8006-31290548d628" />
+Extração: Dados coletados de planilhas Excel (CSV)
 
-<img width="874" height="482" alt="image" src="https://github.com/user-attachments/assets/9c434a0d-d114-4151-b89d-87e9fbf26cc6" />
+Transformação: Processamento com Python (Pandas)
 
-Tecnologias Utilizadas:
-Python: Usado para processar os dados, conectar ao banco de dados e automatizar a execução do processo.
-SQL Server: Banco de dados relacional usado para armazenar os dados de vendas.
-Power BI: Utilizado para criar dashboards interativos e relatórios dinâmicos.
-Excel: Usado para criar e exportar os dados iniciais em formato CSV.
-Como Usar:
+Armazenamento: Banco de dados SQL Server
+
+Visualização: Dashboards interativos no Power BI
+
+https://github.com/user-attachments/assets/9c434a0d-d114-4151-b89d-87e9fbf26cc6
+Análise temporal das vendas por categoria
+
+🛠️ Stack Tecnológica
+Tecnologia	Função no Projeto
+Python	ETL (Extract, Transform, Load)
+SQL Server	Armazenamento e consulta dos dados
+Power BI	Visualização e análise interativa
+Excel/CSV	Fonte inicial dos dados
+⚙️ Configuração do Ambiente
 Pré-requisitos
-Certifique-se de ter as seguintes ferramentas instaladas em seu computador:
-Python 3.x: Para rodar o código Python. Você pode baixá-lo em: https://www.python.org/downloads/.
-SQL Server: O banco de dados usado no projeto. Você pode obter mais informações e o download em: https://www.microsoft.com/en-us/sql-server/sql-server-downloads.
-Power BI Desktop: Para criar os relatórios e dashboards. Pode ser baixado em: https://powerbi.microsoft.com/desktop/.
-Editor de Código (opcional): Como o Visual Studio Code (VSCode) para facilitar a edição do código.
-Instalar as Dependências
-Clone o repositório ou faça o download dos arquivos para o seu computador.
-Em terminal, execute: git clone https://github.com/seu-usuario/RelatorioVendasAutomatizado.git
-Instale as dependências do Python. No terminal, na pasta do projeto, execute: instalar as bibliotecas necessárias, como pandas e pyodbc.
-Executar o Código Python No arquivo relatorio_vendas.py, você pode rodar o código para processar os dados de vendas. Passos:
-Certifique de ter o arquivo vendas.csv com os dados de vendas.
-Execute o script Python com o seguinte comando:
-python codigo.py
-O script Python irá:
+Python 3.8+
 
-Ler os dados do CSV.
-Calcular o total das vendas.
-Criar o banco de dados no SQL Server, se necessário.
-Inserir os dados no banco de dados.
-Conectar o Power BI
-Abra o Power BI Desktop.
+SQL Server
 
-Selecione a opção "Obter Dados" e escolha SQL Server.
+Power BI Desktop
 
-Insira as credenciais do seu SQL Server (servidor e banco de dados).
+Git (opcional)
 
-Importe a tabela Vendas para começar a criar relatórios e dashboards interativos.
+Instalação
+bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/relatorio-vendas.git
+
+# Instale as dependências
+pip install -r requirements.txt
+Dependências principais: pandas, pyodbc, sqlalchemy
+
+🏃 Execução
+Preparação dos dados
+
+Coloque seu arquivo vendas.csv na pasta /data
+
+Configure a conexão com o SQL Server em config/database.ini
+
+Processamento ETL
+
+bash
+python src/etl.py
+Script irá:
+
+Ler e validar os dados
+
+Calcular métricas (totais, médias, tendências)
+
+Carregar para o SQL Server
+
+Visualização no Power BI
+
+Abra reports/dashboard.pbix
+
+Atualize a conexão com seu servidor SQL
+
+Explore os dados com os filtros interativos
+
+📈 Principais Funcionalidades
+Análise por período: Comparativo mensal/trimestral/anual
+
+Segmentação por produto: Identificação dos best-sellers
+
+Análise geográfica: Mapa de calor por região
+
+Previsão de demanda: Modelo simples de projeção
+
+🤝 Contribuição
+Contribuições são bem-vindas! Siga estes passos:
+
+Faça um fork do projeto
+
+Crie uma branch (git checkout -b feature/nova-funcionalidade)
+
+Commit suas alterações (git commit -m 'Adiciona nova funcionalidade')
+
+Push para a branch (git push origin feature/nova-funcionalidade)
+
+Abra um Pull Request
+
+📄 Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
