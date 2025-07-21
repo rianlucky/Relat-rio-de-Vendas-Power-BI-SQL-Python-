@@ -1,0 +1,2 @@
+CREATE DATABASE RelatorioVendas;
+SELECT * FROM Vendas
