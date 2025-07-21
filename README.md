@@ -1,4 +1,4 @@
-Relatório de Vendas SQL + Python + Power BI 📈
+##Relatório de Vendas SQL + Python + Power BI 📈
 Este é um projeto para automatizar a geração de relatórios de vendas utilizando Python, SQL Server, Power BI e Excel. O objetivo é processar os dados de vendas, armazená-los em um banco de dados e criar relatórios dinâmicos que ajudam na tomada de decisões.
 
 <img width="872" height="480" alt="image" src="https://github.com/user-attachments/assets/d8428d2c-b5d6-4855-8006-31290548d628" />
